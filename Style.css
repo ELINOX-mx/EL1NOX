@@ -1,0 +1,185 @@
+:root {
+    --primary-color: #1e1e1e; /* Gris oscuro */
+    --secondary-color: #2c2c2c; /* Gris más claro */
+    --tertiary-color: #3e3e3e; /* Gris medio */
+  
+    --light-primary-color: #4a4a4a; /* Gris suave */
+    --dark-primary-color: #121212; /* Gris casi negro */
+    --light-secondary-color: #5e5e5e;
+    --dark-secondary-color: #1a1a1a;
+    --light-tertiary-color: #6e6e6e;
+    --dark-tertiary-color: #0f0f0f;
+  
+    --accent-color: #757575; /* Gris elegante */
+    --highlight-color: #0e1111; /* Azul para contraste */
+  }
+  
+  /*---------------------------------------*/
+  /* NavBar */
+  /*---------------------------------------*/
+  
+  .nav-text {
+    color: var(--light-primary-color);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .nav-text:hover {
+    color: var(--highlight-color);
+    text-shadow: 0 0 5px var(--highlight-color), 0 0 15px var(--highlight-color);
+  }
+  
+  .txt-Search {
+    font-weight: bold;
+    display: block;
+    padding: 2px;
+    border: 2px solid transparent;
+    outline: none;
+    border-radius: 7px;
+    background-color: var(--secondary-color);
+    color: var(--light-primary-color);
+    box-shadow: 0 0 20px 1px transparent;
+    transition: box-shadow 0.4s linear, border-color 0.4s linear;
+  }
+  
+  .txt-Search:focus {
+    border-color: var(--highlight-color);
+    box-shadow: 0 0 20px 1px var(--highlight-color);
+  }
+  
+  .btn-Search {
+    font-weight: bold;
+    display: block;
+    padding: 2px;
+    border: 2px solid var(--accent-color);
+    background-color: var(--dark-primary-color);
+    color: var(--light-primary-color);
+    border-radius: 4px;
+    transition: box-shadow 0.4s linear, border-color 0.4s linear;
+  }
+  
+  .btn-Search:hover {
+    border-color: var(--highlight-color);
+    box-shadow: 0 0 20px 1px var(--highlight-color);
+  }
+  
+  /*---------------------------------------*/
+  /* Estilos globales */
+  /*---------------------------------------*/
+  
+  body {
+    padding-top: 3rem;
+    color: var(--light-primary-color);
+    background-color: var(--primary-color);
+  }
+  
+  main {
+    margin-bottom: 50px;
+  }
+  h5 {
+    text-shadow: 1px 1px var(--dark-primary-color);
+    color: var(--light-primary-color);
+  }
+  
+  .p-carousel {
+    text-shadow: 1px 1px var(--dark-primary-color);
+    color: var(--light-primary-color);
+  }
+  
+  /*---------------------------------------*/
+  /* Redes Sociales */
+  /*---------------------------------------*/
+  
+  .redes-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .redes-Container h1 {
+    position: relative;
+    text-align: center;
+    color: var(--light-primary-color);
+    font-family: "Cormorant Garamond", serif;
+  }
+  
+  .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    width: 350px;
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 20px 1px var(--dark-primary-color);
+    border-radius: 10px;
+  }
+  
+  .redes-item {
+    padding: 20px;
+    color: var(--light-primary-color);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .redes-item:hover {
+    transform: scale(1.5);
+    color: var(--highlight-color);
+  }
+  
+  /*---------------------------------------*/
+  /* Contratar */
+  /*---------------------------------------*/
+  
+  .Contratar-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .Contratar-Container h2 {
+    position: relative;
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    color: var(--light-primary-color);
+  }
+  
+  .label-contratar {
+    font-weight: bold;
+    color: var(--light-primary-color);
+  }
+  
+  .text-contratar {
+    width: 100%;
+    color: var(--light-primary-color);
+    border: 0;
+    border-bottom: 2px solid var(--dark-secondary-color);
+    outline: 0;
+    background: var(--secondary-color);
+    padding: 7px 0;
+    transition: border-color 0.5s, box-shadow 0.5s;
+  }
+  
+  .text-contratar:focus {
+    border-color: var(--highlight-color);
+    box-shadow: 0 0 10px 0.5px var(--highlight-color);
+  }
+  
+  .btn-Contratar {
+    font-size: 22px;
+    color: var(--light-primary-color);
+    font-weight: bold;
+    padding: 5px;
+    border: 2px solid var(--accent-color);
+    background-color: var(--dark-primary-color);
+    border-radius: 8px;
+    transition: box-shadow 0.4s linear, border-color 0.4s linear, color 0.4s;
+  }
+  
+  .btn-Contratar:hover {
+    color: var(--highlight-color);
+    border-color: var(--highlight-color);
+    box-shadow: 0 0 20px 1px var(--highlight-color);
+  }
